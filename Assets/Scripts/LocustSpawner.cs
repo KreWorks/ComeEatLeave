@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LocustSpawner : MonoBehaviour
 {
+/*
 	[Header("Spawn Setup")]
 	[SerializeField] private FlockUnit flockUnitPrefab;
 	[SerializeField] private int flockSize;
@@ -78,7 +79,8 @@ public class LocustSpawner : MonoBehaviour
 			allUnits[i] = Instantiate(flockUnitPrefab, spawnPosition, rotation, this.transform);
 			//allUnits[i].AssignFlock(this);
 
-			allUnits[i].InitializeSpeed(UnityEngine.Random.Range(minSpeed, maxSpeed), direction);
+			allUnits[i].InitializeSpeed(UnityEngine.Random.Range(minSpeed, maxSpeed));
 		}
 	}
+	*/
 }

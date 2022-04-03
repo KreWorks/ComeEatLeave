@@ -53,7 +53,7 @@ public class Grid<TGridType>
 
 	public Vector3 GetWorldPosition(int x, int y)
 	{
-		return new Vector3(x, 0, y) * cellSize + originPosition - new Vector3(width, 0, height) * cellSize / 2.0f;
+		return (new Vector3(x, 0, y) + new Vector3(0.5f, 0, 0.5f) - new Vector3(width, 0, height) / 2.0f) * cellSize + originPosition;
 	}
 
 	private void GetXY(Vector3 worldPosition, out int x, out int y)

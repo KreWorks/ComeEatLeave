@@ -6,6 +6,7 @@ using System;
 public class CornController : MonoBehaviour
 {
 	public Action<float> OnHealthChange;
+	public Action OnPlantDeath;
 
 	public Gradient color;
 	public Color currentColor;
@@ -14,7 +15,8 @@ public class CornController : MonoBehaviour
 	public float growth = 0.1f;
 
 	protected float health;
-
+	protected bool isDead;
+	public bool IsDead { get { return isDead; } }
 	protected GameManager gameManager;
 	protected Renderer render;
     // Start is called before the first frame update
@@ -22,6 +24,7 @@ public class CornController : MonoBehaviour
     {
 		render = this.GetComponent<Renderer>();
 		this.health = 100;
+		this.isDead = false;
 		GrowPlant();
 		DrawPlant();
 	}
@@ -62,14 +65,36 @@ public class CornController : MonoBehaviour
 
 	protected float GetHeightByScale()
 	{
-		return 0.20f + scale / 200.0f;
+		return scale / 100.0f;
 	}
 
 	protected void ChangeHealth(float healthChange)
 	{
-		this.health += healthChange;
-		Debug.Log("Megharapta egy Sáska");
-		OnHealthChange.Invoke(healthChange);
+		if (health > 0 && !isDead)
+		{
+			this.health += healthChange;
+			OnHealthChange.Invoke(healthChange);
+		}
+		else if (health <= 0 && !isDead)
+		{
+			DestroyPlant();
+		}
+	}
+
+	protected void DestroyPlant()
+	{
+		isDead = true;
+		OnPlantDeath.Invoke();
+		foreach (Action<float> listener in OnHealthChange.GetInvocationList())
+		{
+			RemoveListenerOnHealthChange(listener);
+		}
+		foreach(Action listener in OnPlantDeath.GetInvocationList())
+		{
+			RemoveListenerOnPlantDeath(listener);
+		}
+		Destroy(this.gameObject);
+		Destroy(this);
 	}
 
 	public void AddListenerOnHealthChange(Action<float> listener)
@@ -79,5 +104,14 @@ public class CornController : MonoBehaviour
 	public void RemoveListenerOnHealthChange(Action<float> listener)
 	{
 		OnHealthChange -= listener;
+	}
+
+	public void AddListenerOnPlantDeath(Action listener)
+	{
+		OnPlantDeath += listener;
+	}
+	public void RemoveListenerOnPlantDeath(Action listener)
+	{
+		OnPlantDeath -= listener;
 	}
 }

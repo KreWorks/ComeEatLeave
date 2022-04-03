@@ -1,26 +1,30 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class FlockUnit : MonoBehaviour
 {
 	[SerializeField] private float FOVAngle;
 	[SerializeField] private float smoothDamp;
+	[SerializeField] private LayerMask obstacleMask;
+	[SerializeField] private List<Vector3> directionsToCheckWhenAvoidingObstacles;
 
 	private List<FlockUnit> cohesionNeighbours = new List<FlockUnit>();
 	private List<FlockUnit> avoidanceNeighbours = new List<FlockUnit>();
-	private List<FlockUnit> alignmentNeighbours = new List<FlockUnit>();
+	private List<FlockUnit> aligementNeighbours = new List<FlockUnit>();
 	private Flock assignedFlock;
 	private Vector3 currentVelocity;
+	private Vector3 currentObstacleAvoidanceVector;
 	private float speed;
-	private Vector3 directionPosition;
 
-	public Transform myTransform;
+	public Transform myTransform { get; set; }
+	public List<CornController> corns;
+	private CornController targetCorn;
 
-	public void Awake()
+	private void Awake()
 	{
-		this.myTransform = this.transform;
+		myTransform = transform;
+		corns = new List<CornController>();
+		GetCorns();
 	}
 
 	public void AssignFlock(Flock flock)
@@ -28,10 +32,9 @@ public class FlockUnit : MonoBehaviour
 		assignedFlock = flock;
 	}
 
-	public void InitializeSpeed(float speed, Vector3 direction)
+	public void InitializeSpeed(float speed)
 	{
 		this.speed = speed;
-		this.directionPosition = direction;
 	}
 
 	public void MoveUnit()
@@ -39,50 +42,63 @@ public class FlockUnit : MonoBehaviour
 		FindNeighbours();
 		CalculateSpeed();
 
-		Vector3 directionVector = Vector3.Normalize(directionPosition - myTransform.position) * 1f;
+		var cohesionVector = CalculateCohesionVector() * assignedFlock.cohesionWeight;
+		var avoidanceVector = CalculateAvoidanceVector() * assignedFlock.avoidanceWeight;
+		var aligementVector = CalculateAligementVector() * assignedFlock.aligementWeight;
+		var boundsVector = CalculateBoundsVector() * assignedFlock.boundsWeight;
+		var obstacleVector = CalculateObstacleVector() * assignedFlock.obstacleWeight;
+		var cornVector = CalculateCornAlive() * 0.5f;
 
-		Vector3 cohesionVector = CalculateCohesionVector() * assignedFlock.cohesionWeight;
-		Vector3 avoidanceVector = CalculateAvoidanceVector() * assignedFlock.avoidanceWeight;
-		Vector3 alignmentVector = CalculateAlignmentVector() * assignedFlock.alignmentWeight;
-		
-
-		Vector3 moveVector = cohesionVector + avoidanceVector + alignmentVector;
-		myTransform.forward = moveVector;
+		var moveVector = cornVector + cohesionVector + avoidanceVector + aligementVector + boundsVector + obstacleVector;
 		moveVector = Vector3.SmoothDamp(myTransform.forward, moveVector, ref currentVelocity, smoothDamp);
 		moveVector = moveVector.normalized * speed;
+		if (moveVector == Vector3.zero)
+			moveVector = transform.forward;
 
-		if (myTransform.position.y < 0  || myTransform.position.y > 0.5)
-		{
-			moveVector.y = -moveVector.y;
-		}
 		myTransform.forward = moveVector;
+		if (myTransform.position.y < 0)
+		{
+			moveVector.y = Mathf.Abs(moveVector.y);
+		}
+
+		//Debug.DrawLine(myTransform.position, myTransform.position + moveVector, Color.white, 2f);
 		myTransform.position += moveVector * Time.deltaTime;
+	}
+
+	public void SetDirectionsToCheckWhenAvoidingObstacles(List<Vector3> directions)
+	{
+		directionsToCheckWhenAvoidingObstacles = directions;
+	}
+
+	private void GetCorns()
+	{
+		corns.AddRange(FindObjectsOfType<CornController>());
+		targetCorn = corns[UnityEngine.Random.Range(0, corns.Count)];
 	}
 
 	private void FindNeighbours()
 	{
 		cohesionNeighbours.Clear();
 		avoidanceNeighbours.Clear();
-		alignmentNeighbours.Clear();
-
+		aligementNeighbours.Clear();
 		var allUnits = assignedFlock.allUnits;
-		for (int i = 0; i < allUnits.Length; i++)
+		for (int i = 0; i < allUnits.Count; i++)
 		{
-			var currentUnit = allUnits[i]; 
+			var currentUnit = allUnits[i];
 			if (currentUnit != this)
 			{
-				float currentNeightbourDistanceSqrt = Vector3.SqrMagnitude(currentUnit.transform.position - myTransform.position);
-				if (currentNeightbourDistanceSqrt <= Mathf.Pow(assignedFlock.cohesionDistance, 2))
+				float currentNeighbourDistanceSqr = Vector3.SqrMagnitude(currentUnit.myTransform.position - myTransform.position);
+				if (currentNeighbourDistanceSqr <= assignedFlock.cohesionDistance * assignedFlock.cohesionDistance)
 				{
 					cohesionNeighbours.Add(currentUnit);
 				}
-				if (currentNeightbourDistanceSqrt <= Mathf.Pow(assignedFlock.avoidanceDistance, 2))
+				if (currentNeighbourDistanceSqr <= assignedFlock.avoidanceDistance * assignedFlock.avoidanceDistance)
 				{
 					avoidanceNeighbours.Add(currentUnit);
 				}
-				if (currentNeightbourDistanceSqrt <= Mathf.Pow(assignedFlock.alignmentDistance, 2))
+				if (currentNeighbourDistanceSqr <= assignedFlock.aligementDistance * assignedFlock.aligementDistance)
 				{
-					alignmentNeighbours.Add(currentUnit);
+					aligementNeighbours.Add(currentUnit);
 				}
 			}
 		}
@@ -91,10 +107,7 @@ public class FlockUnit : MonoBehaviour
 	private void CalculateSpeed()
 	{
 		if (cohesionNeighbours.Count == 0)
-		{
 			return;
-		}
-
 		speed = 0;
 		for (int i = 0; i < cohesionNeighbours.Count; i++)
 		{
@@ -107,63 +120,50 @@ public class FlockUnit : MonoBehaviour
 
 	private Vector3 CalculateCohesionVector()
 	{
-		Vector3 cohesionVecrtor = Vector3.zero;
-
+		var cohesionVector = Vector3.zero;
 		if (cohesionNeighbours.Count == 0)
-		{
-			return cohesionVecrtor;
-		}
-
+			return Vector3.zero;
 		int neighboursInFOV = 0;
 		for (int i = 0; i < cohesionNeighbours.Count; i++)
 		{
-			if(IsInFOV(cohesionNeighbours[i].myTransform.position))
+			if (IsInFOV(cohesionNeighbours[i].myTransform.position))
 			{
 				neighboursInFOV++;
-				cohesionVecrtor += cohesionNeighbours[i].myTransform.position;
+				cohesionVector += cohesionNeighbours[i].myTransform.position;
 			}
 		}
 
-		if (neighboursInFOV == 0)
-		{
-			return cohesionVecrtor;
-		}
-		else
-		{
-			return Vector3.Normalize((cohesionVecrtor / neighboursInFOV) - myTransform.position);
-		}
-		
+		cohesionVector /= neighboursInFOV;
+		cohesionVector -= myTransform.position;
+		cohesionVector = cohesionVector.normalized;
+		return cohesionVector;
 	}
 
-	private Vector3 CalculateAlignmentVector()
+	private Vector3 CalculateAligementVector()
 	{
-		Vector3 alignmentVector = myTransform.forward;
-		if(alignmentNeighbours.Count == 0)
-		{
-			return alignmentVector;
-		}
-
+		var aligementVector = myTransform.forward;
+		if (aligementNeighbours.Count == 0)
+			return myTransform.forward;
 		int neighboursInFOV = 0;
-		for (int i = 0; i < alignmentNeighbours.Count; i++)
+		for (int i = 0; i < aligementNeighbours.Count; i++)
 		{
-			if (IsInFOV(alignmentNeighbours[i].myTransform.position))
+			if (IsInFOV(aligementNeighbours[i].myTransform.position))
 			{
 				neighboursInFOV++;
-				alignmentVector += alignmentNeighbours[i].myTransform.forward;
+				aligementVector += aligementNeighbours[i].myTransform.forward;
 			}
 		}
 
-		return Vector3.Normalize((alignmentVector / neighboursInFOV));
+		aligementVector /= neighboursInFOV;
+		aligementVector = aligementVector.normalized;
+		return aligementVector;
 	}
 
 	private Vector3 CalculateAvoidanceVector()
 	{
-		Vector3 avoidanceVector = Vector3.zero;
-		if (avoidanceNeighbours.Count == 0)
-		{
-			return avoidanceVector;
-		}
-
+		var avoidanceVector = Vector3.zero;
+		if (aligementNeighbours.Count == 0)
+			return Vector3.zero;
 		int neighboursInFOV = 0;
 		for (int i = 0; i < avoidanceNeighbours.Count; i++)
 		{
@@ -174,7 +174,113 @@ public class FlockUnit : MonoBehaviour
 			}
 		}
 
-		return Vector3.Normalize((avoidanceVector / neighboursInFOV));
+		avoidanceVector /= neighboursInFOV;
+		avoidanceVector = avoidanceVector.normalized;
+		return avoidanceVector;
+	}
+
+	private Vector3 CalculateBoundsVector()
+	{
+		var offsetToCenter = assignedFlock.transform.position - myTransform.position;
+		bool isNearCenter = (offsetToCenter.magnitude >= assignedFlock.boundsDistance * 0.9f);
+		return isNearCenter ? offsetToCenter.normalized : Vector3.zero;
+	}
+
+	private Vector3 CalculateObstacleVector()
+	{
+		var obstacleVector = Vector3.zero;
+		RaycastHit hit;
+		if (Physics.Raycast(myTransform.position, myTransform.forward, out hit, assignedFlock.obstacleDistance, obstacleMask))
+		{
+			obstacleVector = FindBestDirectionToAvoidObstacle();
+		}
+		else
+		{
+			currentObstacleAvoidanceVector = Vector3.zero;
+		}
+		return obstacleVector;
+	}
+
+	private Vector3 FindBestDirectionToAvoidObstacle()
+	{
+		if (currentObstacleAvoidanceVector != Vector3.zero)
+		{
+			RaycastHit hit;
+			if (!Physics.Raycast(myTransform.position, myTransform.forward, out hit, assignedFlock.obstacleDistance, obstacleMask))
+			{
+				return currentObstacleAvoidanceVector;
+			}
+		}
+		float maxDistance = int.MinValue;
+		var selectedDirection = Vector3.zero;
+		for (int i = 0; i < directionsToCheckWhenAvoidingObstacles.Count; i++)
+		{
+
+			RaycastHit hit;
+			var currentDirection = myTransform.TransformDirection(directionsToCheckWhenAvoidingObstacles[i].normalized);
+			if (Physics.Raycast(myTransform.position, currentDirection, out hit, assignedFlock.obstacleDistance, obstacleMask))
+			{
+
+				float currentDistance = (hit.point - myTransform.position).sqrMagnitude;
+				if (currentDistance > maxDistance)
+				{
+					maxDistance = currentDistance;
+					selectedDirection = currentDirection;
+				}
+			}
+			else
+			{
+				selectedDirection = currentDirection;
+				currentObstacleAvoidanceVector = currentDirection.normalized;
+				return selectedDirection.normalized;
+			}
+		}
+		return selectedDirection.normalized;
+	}
+
+	private Vector3 CalculateCornAlive()
+	{
+		if (targetCorn.IsDead)
+		{
+			if (corns.Count == 0)
+			{
+				GetCorns();
+			}
+			RemoveDeletedCorns();
+
+			targetCorn = corns[UnityEngine.Random.Range(0, corns.Count)];
+			if (corns.Count < 100)
+			{
+				float closestDistanceSqrt = Vector3.SqrMagnitude(targetCorn.transform.position - myTransform.position);
+				foreach (CornController corn in corns)
+				{
+					float currentDistanceSqrt = Vector3.SqrMagnitude(corn.transform.position - myTransform.position);
+					if (currentDistanceSqrt < closestDistanceSqrt)
+					{
+						targetCorn = corn;
+						closestDistanceSqrt = currentDistanceSqrt;
+					}
+				}
+			}
+		}
+
+		Vector3 cornDirection = targetCorn.transform.position - myTransform.position;
+
+		return Vector3.Normalize(cornDirection);
+	}
+
+	private void RemoveDeletedCorns()
+	{
+		List<CornController> newCorns = new List<CornController>();
+		foreach(CornController corn in corns)
+		{
+			if (!corn.IsDead)
+			{
+				newCorns.Add(corn);
+			}
+		}
+
+		corns = newCorns;
 	}
 
 	private bool IsInFOV(Vector3 position)

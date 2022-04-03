@@ -47,7 +47,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FOVAngle: 270
   smoothDamp: 3
-  myTransform: {fileID: 6890760102224039108}
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 512
+  directionsToCheckWhenAvoidingObstacles: []
 --- !u!136 &2413313109952076357
 CapsuleCollider:
   m_ObjectHideFlags: 0
