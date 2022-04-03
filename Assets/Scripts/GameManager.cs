@@ -92,6 +92,10 @@ public class GameManager : MonoBehaviour
 	{
 		cornCount--;
 		SetCornCount();
+		if(cornCount == 0)
+		{
+			uiController.EndPanel();
+		}
 	}
 
 	void SetCornCount()

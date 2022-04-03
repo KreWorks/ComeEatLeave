@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class UiController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class UiController : MonoBehaviour
 	public TMP_Text locustCounter;
 	public TMP_Text waveText;
 	public Image locustImage;
+	public GameObject endPanel;
 	float maxHealth;
 	float health;
 
@@ -16,6 +18,7 @@ public class UiController : MonoBehaviour
 	{
 		this.maxHealth = maxHealth;
 		this.SetHealth(maxHealth);
+		endPanel.SetActive(false);
 	}
 
 	public void SetHealth(float newHealth)
@@ -60,5 +63,20 @@ public class UiController : MonoBehaviour
 	public void SetCornCounter(int cornCount)
 	{
 		cornCounter.text = cornCount.ToString();
+	}
+
+	public void EndPanel()
+	{
+		endPanel.SetActive(true);
+	}
+
+	public void QuitGame()
+	{
+		Application.Quit();
+	}
+
+	public void RestartGame()
+	{
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 }
