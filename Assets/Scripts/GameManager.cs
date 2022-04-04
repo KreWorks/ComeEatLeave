@@ -71,11 +71,12 @@ public class GameManager : MonoBehaviour
 		if (locustCount <= 0)
 		{
 			timer -= Time.deltaTime;
-
 			uiController.SetLocustTimer(timer);
+
 			if (timer <= 0)
 			{
 				locustCount = flock.GenerateUnits();
+				
 				uiController.SetLocustCounter(locustCount);
 				timer = spawnTime;
 			}

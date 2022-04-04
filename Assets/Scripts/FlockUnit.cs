@@ -73,7 +73,14 @@ public class FlockUnit : MonoBehaviour
 	private void GetCorns()
 	{
 		corns.AddRange(FindObjectsOfType<CornController>());
-		targetCorn = corns[UnityEngine.Random.Range(0, corns.Count)];
+		if (corns.Count == 0)
+		{
+			targetCorn = null;
+		}
+		else
+		{
+			targetCorn = corns[UnityEngine.Random.Range(0, corns.Count)];
+		}
 	}
 
 	private void FindNeighbours()

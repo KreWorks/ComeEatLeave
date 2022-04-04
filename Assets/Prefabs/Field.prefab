@@ -12,39 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &7138313313342715674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,39 +28,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &2123467265849869972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,39 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &3247378575418891444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,39 +60,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &7946765330036189849
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,39 +76,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &3393122639124848742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,39 +92,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &2969721378242117830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,39 +108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &3157366187779047069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,39 +124,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &3246906165985480915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,39 +140,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &3969626035185081800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -417,39 +156,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &6329493604032429729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,39 +172,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!1 &4042024634935514323
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,6 +229,7 @@ Transform:
   - {fileID: 8825081999075107674}
   - {fileID: 2564526638632915068}
   - {fileID: 1818652401385222637}
+  - {fileID: 8221729030392378}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -563,39 +245,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &5578633470714193098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,39 +261,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &7512500000664107084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -653,39 +277,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &9052969507366715052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -698,39 +293,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &6686280375548394883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,39 +309,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &4040408293994054042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -788,39 +325,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &2678568842585660752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -833,39 +341,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &4345640185216158199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -878,39 +357,137 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
+--- !u!1 &6804263643070981171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8221729030392378}
+  - component: {fileID: 4925008390514883021}
+  m_Layer: 0
+  m_Name: Audio Source
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8221729030392378
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6804263643070981171}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 720971595544948813}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &4925008390514883021
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6804263643070981171}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7e712e569a901274889955e0490e9315, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.8
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &7861183834749570759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -923,39 +500,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &2859720631087728574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -968,39 +516,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &7808505984990854620
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1013,39 +532,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &30303786204243046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1058,39 +548,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &3109733212745845367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1103,39 +564,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!114 &7848893160018765598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1148,39 +580,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f347c4cea354dd4dbb6e2ee7db8ddad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  color:
-    serializedVersion: 2
-    key0: {r: 0.09181184, g: 0.9056604, b: 0.055535804, a: 1}
-    key1: {r: 0.80287015, g: 0.8235294, b: 0.027450955, a: 1}
-    key2: {r: 1, g: 0.75342274, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 34888
-    ctime2: 65535
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  currentColor: {r: 0, g: 0, b: 0, a: 0}
   scale: 10
   maxScale: 100
   growth: 2
+  biteSound: {fileID: 4925008390514883021}
 --- !u!1001 &439363858521663349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1253,6 +656,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -1265,15 +673,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ede0d5c49d51146a3d9939d255d735, type: 3}
---- !u!4 &4855544329311980655 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
-    type: 3}
-  m_PrefabInstance: {fileID: 439363858521663349}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8446784842046865020 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
+    type: 3}
+  m_PrefabInstance: {fileID: 439363858521663349}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4855544329311980655 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
     type: 3}
   m_PrefabInstance: {fileID: 439363858521663349}
   m_PrefabAsset: {fileID: 0}
@@ -1349,6 +757,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -1445,6 +858,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -1541,6 +959,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -1553,15 +976,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ede0d5c49d51146a3d9939d255d735, type: 3}
---- !u!4 &5883611395856082129 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
-    type: 3}
-  m_PrefabInstance: {fileID: 1503214548220940235}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7493304494858950338 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
+    type: 3}
+  m_PrefabInstance: {fileID: 1503214548220940235}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5883611395856082129 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
     type: 3}
   m_PrefabInstance: {fileID: 1503214548220940235}
   m_PrefabAsset: {fileID: 0}
@@ -1637,6 +1060,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -1649,15 +1077,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ede0d5c49d51146a3d9939d255d735, type: 3}
---- !u!4 &5963238913179118630 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
-    type: 3}
-  m_PrefabInstance: {fileID: 1709990157098829628}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7249379136836542005 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
+    type: 3}
+  m_PrefabInstance: {fileID: 1709990157098829628}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5963238913179118630 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
     type: 3}
   m_PrefabInstance: {fileID: 1709990157098829628}
   m_PrefabAsset: {fileID: 0}
@@ -1733,6 +1161,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -1829,6 +1262,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -1925,6 +1363,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -2021,6 +1464,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -2033,15 +1481,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ede0d5c49d51146a3d9939d255d735, type: 3}
---- !u!1 &6086222955096131105 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
-    type: 3}
-  m_PrefabInstance: {fileID: 2834864913046445864}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7074524242309788722 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
+    type: 3}
+  m_PrefabInstance: {fileID: 2834864913046445864}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6086222955096131105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
     type: 3}
   m_PrefabInstance: {fileID: 2834864913046445864}
   m_PrefabAsset: {fileID: 0}
@@ -2117,6 +1565,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -2129,15 +1582,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ede0d5c49d51146a3d9939d255d735, type: 3}
---- !u!4 &7792035373342359665 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
-    type: 3}
-  m_PrefabInstance: {fileID: 2979247898648128363}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6519390626135372386 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
+    type: 3}
+  m_PrefabInstance: {fileID: 2979247898648128363}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7792035373342359665 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
     type: 3}
   m_PrefabInstance: {fileID: 2979247898648128363}
   m_PrefabAsset: {fileID: 0}
@@ -2213,6 +1666,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -2225,15 +1683,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ede0d5c49d51146a3d9939d255d735, type: 3}
---- !u!4 &7720912124811292564 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
-    type: 3}
-  m_PrefabInstance: {fileID: 3340690593414874254}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6736656562186935687 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
+    type: 3}
+  m_PrefabInstance: {fileID: 3340690593414874254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7720912124811292564 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
     type: 3}
   m_PrefabInstance: {fileID: 3340690593414874254}
   m_PrefabAsset: {fileID: 0}
@@ -2309,6 +1767,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -2405,6 +1868,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -2501,6 +1969,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -2513,15 +1986,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ede0d5c49d51146a3d9939d255d735, type: 3}
---- !u!4 &8825081999075107674 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
-    type: 3}
-  m_PrefabInstance: {fileID: 4540272311475456064}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5486409687086010697 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
+    type: 3}
+  m_PrefabInstance: {fileID: 4540272311475456064}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8825081999075107674 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
     type: 3}
   m_PrefabInstance: {fileID: 4540272311475456064}
   m_PrefabAsset: {fileID: 0}
@@ -2597,6 +2070,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -2773,6 +2251,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -2785,15 +2268,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ede0d5c49d51146a3d9939d255d735, type: 3}
---- !u!4 &1988673691670825569 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
-    type: 3}
-  m_PrefabInstance: {fileID: 6837454761846759803}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3297314388001863794 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
+    type: 3}
+  m_PrefabInstance: {fileID: 6837454761846759803}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1988673691670825569 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
     type: 3}
   m_PrefabInstance: {fileID: 6837454761846759803}
   m_PrefabAsset: {fileID: 0}
@@ -2869,6 +2352,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -2881,15 +2369,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ede0d5c49d51146a3d9939d255d735, type: 3}
---- !u!4 &2646112275691506481 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
-    type: 3}
-  m_PrefabInstance: {fileID: 7044287148362375211}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1361134650322483490 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
+    type: 3}
+  m_PrefabInstance: {fileID: 7044287148362375211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2646112275691506481 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
     type: 3}
   m_PrefabInstance: {fileID: 7044287148362375211}
   m_PrefabAsset: {fileID: 0}
@@ -2965,6 +2453,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -2977,15 +2470,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ede0d5c49d51146a3d9939d255d735, type: 3}
---- !u!4 &2347809210435711002 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
-    type: 3}
-  m_PrefabInstance: {fileID: 7345279488599563008}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1643323281215832585 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
+    type: 3}
+  m_PrefabInstance: {fileID: 7345279488599563008}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2347809210435711002 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
     type: 3}
   m_PrefabInstance: {fileID: 7345279488599563008}
   m_PrefabAsset: {fileID: 0}
@@ -3061,6 +2554,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -3157,6 +2655,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -3169,15 +2672,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ede0d5c49d51146a3d9939d255d735, type: 3}
---- !u!4 &3923667849089816266 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
-    type: 3}
-  m_PrefabInstance: {fileID: 8289191568574201296}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &11525931923956953 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
+    type: 3}
+  m_PrefabInstance: {fileID: 8289191568574201296}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3923667849089816266 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
     type: 3}
   m_PrefabInstance: {fileID: 8289191568574201296}
   m_PrefabAsset: {fileID: 0}
@@ -3253,6 +2756,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -3349,6 +2857,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -3445,6 +2958,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -3541,6 +3059,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name
@@ -3553,15 +3076,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2ede0d5c49d51146a3d9939d255d735, type: 3}
---- !u!4 &3642062480189252785 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
-    type: 3}
-  m_PrefabInstance: {fileID: 8642830215165038507}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &346897428561237666 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
+    type: 3}
+  m_PrefabInstance: {fileID: 8642830215165038507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3642062480189252785 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a2ede0d5c49d51146a3d9939d255d735,
     type: 3}
   m_PrefabInstance: {fileID: 8642830215165038507}
   m_PrefabAsset: {fileID: 0}
@@ -3637,6 +3160,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: a2ede0d5c49d51146a3d9939d255d735,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1ececf1d335b3f748bba75a992933391, type: 2}
     - target: {fileID: -927199367670048503, guid: a2ede0d5c49d51146a3d9939d255d735,
         type: 3}
       propertyPath: m_Name

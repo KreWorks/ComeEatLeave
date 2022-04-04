@@ -9,10 +9,12 @@ public class UiController : MonoBehaviour
 	public TMP_Text cornCounter;
 	public TMP_Text locustCounter;
 	public TMP_Text waveText;
+	public TMP_Text endText;
 	public Image locustImage;
 	public GameObject endPanel;
 	float maxHealth;
 	float health;
+	int waveCount = 1;
 
 	public void SetMaxHealth(float maxHealth)
 	{
@@ -47,15 +49,27 @@ public class UiController : MonoBehaviour
 		timeText += (time - Mathf.FloorToInt(time)).ToString().Substring(1, 3);
 
 		locustCounter.text = timeText;
-		waveText.text = "A wave is coming in " +Mathf.FloorToInt(time).ToString();
+		string counterText = waveCount == 1 ? "1st" : (waveCount == 2 ? "2nd" : (waveCount == 3 ? "3rd" : waveCount.ToString()+"th"));
+		waveText.text = "The " + counterText + " wave is coming in " +Mathf.FloorToInt(time).ToString();
 	}
 
 	public void SetLocustCounter(int locustCount)
 	{
+		if (locustCount == 0)
+		{
+			waveCount++;
+		}
 		if (!locustImage.gameObject.activeSelf)
 		{
 			locustImage.gameObject.SetActive(true);
-			waveText.gameObject.SetActive(false);
+			if (waveCount == 1)
+			{
+				waveText.text = "Click your mouse and catch as many as you can!";
+			}
+			else
+			{
+				waveText.gameObject.SetActive(false);
+			}	
 		}
 		locustCounter.text = locustCount.ToString();
 	}
@@ -67,6 +81,7 @@ public class UiController : MonoBehaviour
 
 	public void EndPanel()
 	{
+		endText.text = "Sadly the locusts ate all of your crops.You fought brave and survived " + waveCount.ToString() + " waves.";
 		endPanel.SetActive(true);
 	}
 

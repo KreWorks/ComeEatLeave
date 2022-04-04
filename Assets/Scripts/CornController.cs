@@ -8,11 +8,10 @@ public class CornController : MonoBehaviour
 	public Action<float> OnHealthChange;
 	public Action OnPlantDeath;
 
-	public Gradient color;
-	public Color currentColor;
 	public float scale = 10;
 	public float maxScale = 100;
 	public float growth = 0.1f;
+	public AudioSource biteSound;
 
 	protected float health;
 	protected bool isDead;
@@ -44,17 +43,15 @@ public class CornController : MonoBehaviour
 	{
 		if (other.gameObject.tag == "Locust")
 		{
-			ChangeHealth(-25);
+			ChangeHealth(-50);
+			biteSound.PlayOneShot(biteSound.clip);
 		}
 	}
 
 	protected void DrawPlant()
 	{
 		float currentPercent = (scale + 0.0f) / (maxScale + 0.0f);
-
-		currentColor = color.Evaluate(currentPercent);
-		//Debug.Log("color: " + render.material.color);
-		render.material.color = currentColor;
+		render.material.SetFloat("_scale",scale); // color = currentColor;
 	}
 
 	protected void GrowPlant()
