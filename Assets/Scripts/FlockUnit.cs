@@ -47,15 +47,15 @@ public class FlockUnit : MonoBehaviour
 		var aligementVector = CalculateAligementVector() * assignedFlock.aligementWeight;
 		var boundsVector = CalculateBoundsVector() * assignedFlock.boundsWeight;
 		var obstacleVector = CalculateObstacleVector() * assignedFlock.obstacleWeight;
-		var cornVector = CalculateCornAlive() * 0.5f;
+		var cornVector = CalculateCornAlive() * 0.75f;
 
 		var moveVector = cornVector + cohesionVector + avoidanceVector + aligementVector + boundsVector + obstacleVector;
-		moveVector = Vector3.SmoothDamp(myTransform.right, moveVector, ref currentVelocity, smoothDamp);
+		moveVector = Vector3.SmoothDamp(-myTransform.right, moveVector, ref currentVelocity, smoothDamp);
 		moveVector = moveVector.normalized * speed;
 		if (moveVector == Vector3.zero)
-			moveVector = transform.right;
+			moveVector = -transform.right;
 
-		myTransform.right = moveVector;
+		myTransform.right = -moveVector;
 		if (myTransform.position.y < 0)
 		{
 			moveVector.y = Mathf.Abs(moveVector.y);
@@ -148,16 +148,16 @@ public class FlockUnit : MonoBehaviour
 
 	private Vector3 CalculateAligementVector()
 	{
-		var aligementVector = myTransform.right;
+		var aligementVector = -myTransform.right;
 		if (aligementNeighbours.Count == 0)
-			return myTransform.right;
+			return -myTransform.right;
 		int neighboursInFOV = 0;
 		for (int i = 0; i < aligementNeighbours.Count; i++)
 		{
 			if (IsInFOV(aligementNeighbours[i].myTransform.position))
 			{
 				neighboursInFOV++;
-				aligementVector += aligementNeighbours[i].myTransform.right;
+				aligementVector += -aligementNeighbours[i].myTransform.right;
 			}
 		}
 
@@ -197,7 +197,7 @@ public class FlockUnit : MonoBehaviour
 	{
 		var obstacleVector = Vector3.zero;
 		RaycastHit hit;
-		if (Physics.Raycast(myTransform.position, myTransform.right, out hit, assignedFlock.obstacleDistance, obstacleMask))
+		if (Physics.Raycast(myTransform.position, -myTransform.right, out hit, assignedFlock.obstacleDistance, obstacleMask))
 		{
 			obstacleVector = FindBestDirectionToAvoidObstacle();
 		}
@@ -213,7 +213,7 @@ public class FlockUnit : MonoBehaviour
 		if (currentObstacleAvoidanceVector != Vector3.zero)
 		{
 			RaycastHit hit;
-			if (!Physics.Raycast(myTransform.position, myTransform.right, out hit, assignedFlock.obstacleDistance, obstacleMask))
+			if (!Physics.Raycast(myTransform.position, -myTransform.right, out hit, assignedFlock.obstacleDistance, obstacleMask))
 			{
 				return currentObstacleAvoidanceVector;
 			}
@@ -292,6 +292,6 @@ public class FlockUnit : MonoBehaviour
 
 	private bool IsInFOV(Vector3 position)
 	{
-		return Vector3.Angle(myTransform.right, position - myTransform.position) <= FOVAngle;
+		return Vector3.Angle(-myTransform.right, position - myTransform.position) <= FOVAngle;
 	}
 }

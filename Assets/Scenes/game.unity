@@ -297,7 +297,7 @@ MonoBehaviour:
   plantParent: {fileID: 918712253}
   uiController: {fileID: 1416813693}
   flock: {fileID: 1356490326}
-  spawnTime: 5
+  spawnTime: 3
 --- !u!65 &131490645
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3050,7 +3050,7 @@ MonoBehaviour:
   cornCounter: {fileID: 984091400}
   locustCounter: {fileID: 153223080}
   waveText: {fileID: 1439200000}
-  endText: {fileID: 0}
+  endText: {fileID: 433167054}
   locustImage: {fileID: 61039840}
   endPanel: {fileID: 1594508863}
 --- !u!1 &1439199998

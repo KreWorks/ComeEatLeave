@@ -15,7 +15,7 @@ public class GameManager : MonoBehaviour
 	public UiController uiController;
 	public Flock flock;
 
-	public float spawnTime = 5.0f;
+	public float spawnTime = 3.0f;
 
 	protected Grid<Cell> grid;
 
