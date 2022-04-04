@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 145686024671583787}
   - component: {fileID: 7572995944926721020}
   - component: {fileID: 7572995944926721019}
-  - component: {fileID: 2029279175489149268}
+  - component: {fileID: 5102563661922044615}
   m_Layer: 0
   m_Name: locust 1
   m_TagString: Locust
@@ -122,8 +122,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &2029279175489149268
-CapsuleCollider:
+--- !u!65 &5102563661922044615
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -132,7 +132,6 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.002
-  m_Height: 0.008
-  m_Direction: 0
-  m_Center: {x: 0.0015, y: 0, z: 0.001}
+  serializedVersion: 2
+  m_Size: {x: 0.7016268, y: 0.41057146, z: 0.23040001}
+  m_Center: {x: 0.1508134, y: 0.18328574, z: 0}
